@@ -1,13 +1,13 @@
-[![Zscanner IAC Scan](https://github.com/zscaler/nss-azure-deploy/actions/workflows/ci.yml/badge.svg)](https://github.com/zscaler/nss-azure-deploy/actions/workflows/ci.yml)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/zscaler/nss-azure-deploy)](https://github.com/zscaler/nss-azure-deploy/releases)
-[![License](https://img.shields.io/github/license/zscaler/nss-azure-deploy?color=blue)](https://github.com/zscaler/nss-azure-deploy/blob/master/LICENSE)
+[![Zscanner IAC Scan](https://github.com/zscaler/zscaler-vse-azurerm-deploy/actions/workflows/ci.yml/badge.svg)](https://github.com/zscaler/zscaler-vse-azurerm-deploy/actions/workflows/ci.yml)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/zscaler/zscaler-vse-azurerm-deploy)](https://github.com/zscaler/zscaler-vse-azurerm-deploy/releases)
+[![License](https://img.shields.io/github/license/zscaler/zscaler-vse-azurerm-deploy?color=blue)](https://github.com/zscaler/zscaler-vse-azurerm-deploy/blob/master/LICENSE)
 [![Zscaler Community](https://img.shields.io/badge/zscaler-community-blue)](https://community.zscaler.com/)
 
 # Zscaler NSS Azure Resource Manager (ARM) Template
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fzscaler%2Fnss-azure-deploy%2Fmaster%2Fazuredeploy.json)
-[![Deploy to Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fzscaler%2Fnss-azure-deploy%2Fmaster%2Fazuredeploy.json)
-[![Visualize](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fzscaler%2Fnss-azure-deploy%2Fmaster%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https%3A%2F%2Fgithub.com%2Fzscaler%2Fzscaler-vse-azurerm-deploy%2Fblob%2Fmaster%2Fazuredeploy.json)
+[![Deploy to Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.svg)](https%3A%2F%2Fgithub.com%2Fzscaler%2Fzscaler-vse-azurerm-deploy%2Fblob%2Fmaster%2Fazuredeploy.json)
+[![Visualize](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true)](https%3A%2F%2Fgithub.com%2Fzscaler%2Fzscaler-vse-azurerm-deploy%2Fblob%2Fmaster%2Fazuredeploy.json)
 
 ## Overview
 
@@ -30,7 +30,7 @@ This repository contains an Azure Resource Manager (ARM) template for deploying 
 
 ### NSS Architecture
 
-![Architecture](assets/znss-azurerm-architecture.png)
+![Architecture](assets/vse-azurerm-architecture.png)
 
 ## Important Notes
 
@@ -40,7 +40,7 @@ The NSS VM carries 2 Network Interfaces. The primary interface is used for manag
 
 ## Initiating the Deployment
 
-> **Note** Before you begin deployment, contact [Zscaler Support](https://help.zscaler.com/login-tickets) to obtain the NSS VHD SAS Token and the Azure VM instance type recommendations. By default this template will deploy a ``Standard_D2_v4`` VM Size; however, the following VMSizes are also supported as per [Zscaler's deployment guide documentation](https://help.zscaler.com/zia/nss-deployment-guide-microsoft-azure):
+> **Note** Before you begin deployment, contact [Zscaler Support](https://help.zscaler.com/login-tickets) to obtain the NSS VHD SAS Token and the Azure VM instance type recommendations. By default this template will deploy a ``Standard_D2_v4`` VM Size; however, the following VMSizes are also supported as per [Zscaler's deployment guide documentation](https://help.zscaler.com/zia/configuring-virtual-service-edge-microsoft-azure):
 
 - ``Standard_D2_v4``
 - ``Standard_D4_v4``
@@ -53,26 +53,14 @@ The NSS VM carries 2 Network Interfaces. The primary interface is used for manag
 
 Zscaler hosts its VHD images in multiple storage accounts across different regions. This template is configured in way, where the administrator can select which region, the VHD image must be tranferred from. We recommend that you select the storage closer to the region where the resource group and storage account will be located. The following options are available in the drop down menu when deploying the template via the Azure Template wizard:
 
-- ``zsprod``: North America Region
-- ``zsprodau``: Australia Region
-- ``zsprodeu``: Europe Region
 - ``zsprodwestus``: Western USA
 - ``zsprodwesteu``: Western Europe
-
-The following options must be used specifically by Governement customers.
-
-- ``zsgovnsstexas``: Texas
-- ``zsgovnssarizona``: Arizona
-- ``zsgovnssiowa``: Iowa
-- ``zsgovnssvirginia``: Virginia
-
-> **Note** Note that choosing a government region for deployment in an enterprise Azure Account is not supported and will cause the template deployment to fail.
 
 > **Note** Each region requires authentication via dedicated SAS Token. Please contact Zscaler Support to obtain the necessary SAS token, by providing the name of the region where you want to download the VHD image from.
 
 ## Support and Reporting Issues
 
-Support for this ARM template is made available exclusively through Github repo issue tracking.  You are also welcome to contact the contributors directly via their provided contact information.  If you find a bug, please open an issue against this repo [here](https://github.com/zscaler/nss-azure-deploy/issues).
+Support for this ARM template is made available exclusively through Github repo issue tracking.  You are also welcome to contact the contributors directly via their provided contact information.  If you find a bug, please open an issue against this repo [here](https://github.com/zscaler/zscaler-vse-azurerm-deploy/issues).
 
 ## Contributors
 
@@ -83,7 +71,7 @@ Zscaler is actively contributing to and maintaining this repo.
 
 ## Licensing
 
-This work is released under the MIT license. A copy of the license is provided in the [LICENSE](https://github.com/zscaler/nss-azure-deploy/blob/master/LICENSE) file.
+This work is released under the MIT license. A copy of the license is provided in the [LICENSE](https://github.com/zscaler/zscaler-vse-azurerm-deploy/blob/master/LICENSE) file.
 
 ## References
 
