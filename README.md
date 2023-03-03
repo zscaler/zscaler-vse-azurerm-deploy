@@ -5,9 +5,9 @@
 
 # Zscaler NSS Azure Resource Manager (ARM) Template
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https%3A%2F%2Fraw.githubusercontent.com%2Fzscaler%2Fzscaler-vse-azurerm-deploy%2Fmaster%2Fazuredeploy.json)
-[![Deploy to Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.svg)](https%3A%2F%2Fraw.githubusercontent.com%2Fzscaler%2Fzscaler-vse-azurerm-deploy%2Fmaster%2Fazuredeploy.json)
-[![Visualize](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true)](https%3A%2F%2Fraw.githubusercontent.com%2Fzscaler%2Fzscaler-vse-azurerm-deploy%2Fmaster%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fzscaler%2Fzscaler-vse-azurerm-deploy%2Fmaster%2Fazuredeploy.json)
+[![Deploy to Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fzscaler%2Fzscaler-vse-azurerm-deploy%2Fmaster%2Fazuredeploy.json)
+[![Visualize](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fzscaler%2Fzscaler-vse-azurerm-deploy%2Fmaster%2Fazuredeploy.json)
 
 ## Overview
 
